@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.assignments.adminapp.EditDeleteCatalogController">
+  <tabs>
+    <Tab text="Edit">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="34.0" layoutY="82.0" text="Please enter an ID here">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idEdit" layoutX="291.0" layoutY="76.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="34.0" layoutY="186.0" text="Catalog name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="catalogName" editable="false" layoutX="291.0" layoutY="180.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="450.0" layoutY="132.0" mnemonicParsing="false" onMouseClicked="#searchCatalogEdit" text="search">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelButton" layoutX="388.0" layoutY="304.0" mnemonicParsing="false" onMouseClicked="#cancel" text="cancel">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="editButton" layoutX="481.0" layoutY="304.0" mnemonicParsing="false" onMouseClicked="#onEditClick" text="edit">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Delete">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="47.0" layoutY="64.0" text="Please enter an ID here">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idDelete" layoutX="300.0" layoutY="58.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="453.0" layoutY="116.0" mnemonicParsing="false" onMouseClicked="#searchCatalogDelete" text="search">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="47.0" layoutY="162.0" text="Catalog name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="catalogLabel" layoutX="300.0" layoutY="162.0" text="Result will be displayed here">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="344.0" layoutY="272.0" mnemonicParsing="false" onMouseClicked="#cancel" text="cancel">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="452.0" layoutY="272.0" mnemonicParsing="false" onMouseClicked="#onDeleteClick" text="delete">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

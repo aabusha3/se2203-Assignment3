@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.assignments.adminapp.EditDeleteItemController">
+  <tabs>
+    <Tab text="Edit">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="20.0" prefHeight="33.0" prefWidth="174.0" text="Please enter an ID here">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idEdit" layoutX="276.0" layoutY="25.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="409.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#searchItemEdit" text="Search" />
+                  <Label layoutX="50.0" layoutY="134.0" prefHeight="33.0" prefWidth="174.0" text="Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="176.0" prefHeight="33.0" prefWidth="174.0" text="Price">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="223.0" prefHeight="33.0" prefWidth="174.0" text="Size">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="267.0" prefHeight="33.0" prefWidth="174.0" text="Number In Stock">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name" layoutX="277.0" layoutY="136.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="price" layoutX="277.0" layoutY="178.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="size" layoutX="277.0" layoutY="225.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="numberInStock" layoutX="277.0" layoutY="269.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="editButton" layoutX="417.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#onEditClick" text="Edit" />
+                  <Button fx:id="cancelButton" layoutX="343.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#cancel" text="Cancel" />
+                  <ComboBox fx:id="comboBox" layoutX="277.0" layoutY="100.0" prefHeight="23.0" prefWidth="186.0" />
+                  <Label layoutX="50.0" layoutY="95.0" prefHeight="33.0" prefWidth="174.0" text="Catalog">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Delete">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="41.0" prefHeight="33.0" prefWidth="174.0" text="Please enter an ID here">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="cancel1" layoutX="417.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#cancel" text="Cancel" />
+                  <TextField fx:id="idDelete" layoutX="284.0" layoutY="46.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="50.0" layoutY="134.0" prefHeight="33.0" prefWidth="174.0" text="Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="180.0" prefHeight="33.0" prefWidth="174.0" text="Price">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="224.0" prefHeight="33.0" prefWidth="174.0" text="Size">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="268.0" prefHeight="33.0" prefWidth="174.0" text="Number In Stock">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="496.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#onDeleteClick" text="Delete" />
+                  <Button layoutX="407.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#searchItemDelete" text="Search" />
+                  <Label fx:id="nameLabel" layoutX="282.0" layoutY="141.0" text="Result Will Displayed Here">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="priceLabel" layoutX="282.0" layoutY="187.0" text="Result Will Displayed Here">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sizeLabel" layoutX="282.0" layoutY="231.0" text="Result Will Displayed Here">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numberInStockLabel" layoutX="282.0" layoutY="275.0" text="Result Will Displayed Here">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
